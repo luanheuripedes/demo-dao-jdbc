@@ -107,12 +107,12 @@ public class SellerDaoJDBC implements ISellerDAO  {
 			st.setInt(1, id);
 			
 			int rows = st.executeUpdate();
-			
+			 
 			if(rows == 0) {
-				throw new DbException("Id não existe");
+				System.out.println("Id não existe");
 			}
 			else {
-				
+				System.out.println("Deletado com sucesso");
 			}
 			
 		}catch(SQLException e) {

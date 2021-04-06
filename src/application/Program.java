@@ -50,7 +50,6 @@ public class Program {
 		System.out.println("Entre com id para deletar");
 		int id = sc.nextInt();
 		sellerDao.deleteById(id);
-		System.out.println("Delete Complete");
 		
 		sc.close();
 	}
